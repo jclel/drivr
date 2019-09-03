@@ -1,0 +1,80 @@
+h1 {
+    color: rgb(190, 40, 190);
+    font-size: 72pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(190, 40, 190);
+}
+
+/* 
+CSS grid works by writing display: grid in the parent container and then telling it how many columns and rows we want it to have
+And how wide those to be. Here we just use columns and set the width to be automatically the same width as each other 
+And divide up the space evenly.
+*/
+.header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+h1 span {
+    font-size: 24px;
+    color: black;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    float: right;
+    height: 30px;
+
+}
+
+/* Whereas here we tell grid that we only want two boxes and make each of the main boxes take up 40% of the width of the container div each */
+.mainBoxContainer {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    margin-bottom: 40px;
+}
+
+.mainBox {
+    background: white;
+    border: 2px solid rgb(190, 40, 190);
+    width: 70%;
+    height: 200px;
+    text-align: center;
+    padding: 20px;
+}
+
+.mainBox p {
+    font-size: 50px;
+}
+
+.mainBox:hover {
+    background: rgb(190, 40, 190);
+    color: white;
+}
+
+/* And here we say we want four boxes that each take up 20% of the space each. */
+.moreBoxesContainer {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 50px;
+}
+
+.moreBoxes {
+    background: rgb(190, 40, 190);
+    color: white;
+    text-align: center;
+    height: 100px;
+    font-size: 24px;
+}
+
+.moreBoxes:hover {
+    background: white;
+    border: 1px solid rgb(190, 40, 190);
+    color: rgb(190, 40, 190);
+}
