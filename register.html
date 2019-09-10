@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./static/login.css" />
+    <title>DRIVR | Register</title>
+</head>
+<body>
+    <!-- Wrap the page in a container div so it's easier to center all elements at the same time etc -->
+    <div class="container">
+        <h1>DRIVR</h1>
+        <div id="pleaseRegister">
+        <!-- In our next iteration, we could alter this page to display content dynamically after a user selects whether they're registering as a Customer or Driver. -->
+        <p>Please enter your details to sign up and start getting parcels delivered with DRIVR.</p>
+        </div>
+        <!-- The action here will lead to a PHP script which queries the DB and validates a user, then redirects to Dashboard -->
+        <form id="register" action="">
+            <div class="firstLastName">
+            <input type="text" class="names" name="firstName" placeholder="What's your first name?">
+            <input type="text" class="names name="lastName" placeholder="and last name?">
+            </div>
+            <input type="password" name="password" placeholder="Enter a password">
+            <input type="text" name="email" placeholder="What's your email?">
+            <input type="text" name="address" value="What's your address?">
+            <br>
+            <button type="submit">REGISTER</button>
+        </form>
+    </div>
+</body>
+</html>
