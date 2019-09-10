@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./static/login.css" />
-    <title>DRIVR | Login</title>
+    <title>DRIVR</title>
 </head>
 <body>
     <!-- Wrap the page in a container div so it's easier to center all elements at the same time etc -->
     <div class="container">
         <h1>DRIVR</h1>
         <!-- The action here will lead to a PHP script which queries the DB and validates a user, then redirects to Dashboard -->
-        <form action="register.php">
-            <input type="text" name="email" placeholder="Enter email">
-            <input type="password" name="password" placeholder="Enter password">
-            <br>
-            <button type="submit">LOGIN</button>
-        </form>
+        <h3>Welcome to DRIVR</h3>
+        <p>DRIVR lets you book reliable, affordable drivers to deliver your important packages.</p>
+        <p>To get started, register or login below.</p>
+        <div class="actionButtons">
+        <a href="register.html"><span class="actionButton">Register</span></a>
+        <a href="login.html"><span class="actionButton">Login</span></a>
+        </div>
     </div>
 </body>
 </html>

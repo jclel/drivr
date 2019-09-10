@@ -4,6 +4,10 @@
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1 {
     color: rgb(190, 40, 190);
     font-size: 72pt;
@@ -54,3 +58,21 @@ button:hover {
     margin: auto;
 }
 
+.actionButtons {
+    display: inline-block;
+    width: 400px;
+    margin-top: 80px;
+}
+
+.actionButton {
+    width: 100px;
+    border: 1px solid rgb(190, 40, 190);
+    padding: 30px 50px;
+    color: rgb(190, 40, 190);
+    font-size: 24px;
+}
+
+.actionButton:hover {
+    background-color: rgb(190, 40, 190);
+    color: white;
+}
